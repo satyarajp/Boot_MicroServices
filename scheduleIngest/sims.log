@@ -1,0 +1,611 @@
+2018-10-17 11:24:32.850  INFO 5296 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 5296 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 11:24:32.865  INFO 5296 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 11:24:33.006  INFO 5296 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a079870: startup date [Wed Oct 17 11:24:33 IST 2018]; root of context hierarchy
+2018-10-17 11:24:37.433  INFO 5296 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6072494a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 11:24:39.459  INFO 5296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 11:24:39.514  INFO 5296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 11:24:39.514  INFO 5296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 11:24:39.545  INFO 5296 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 11:24:39.978  INFO 5296 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 11:24:39.978  INFO 5296 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6972 ms
+2018-10-17 11:24:40.371  INFO 5296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 11:24:40.373  INFO 5296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 11:24:40.375  INFO 5296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 11:24:40.376  INFO 5296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 11:24:40.377  INFO 5296 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 11:24:40.378  INFO 5296 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 11:24:41.223  INFO 5296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 11:24:41.723  INFO 5296 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 11:24:41.790  INFO 5296 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:24:41.805  INFO 5296 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 11:24:42.028  INFO 5296 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 11:24:42.043  INFO 5296 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 11:24:42.223  INFO 5296 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 11:24:42.926  INFO 5296 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 11:24:44.081  INFO 5296 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:24:46.011  INFO 5296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:24:46.073  INFO 5296 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 11:24:46.732  INFO 5296 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0a091774-a037-49d8-9e78-499ad9163204
+
+2018-10-17 11:24:47.501  INFO 5296 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22ead351, org.springframework.security.web.context.SecurityContextPersistenceFilter@373afd6c, org.springframework.security.web.header.HeaderWriterFilter@1f10fec6, org.springframework.security.web.authentication.logout.LogoutFilter@241fbec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@592ca48c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@677ce519, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68af87ad, org.springframework.security.web.session.SessionManagementFilter@510689af, org.springframework.security.web.access.ExceptionTranslationFilter@4b88ca8e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7a83ccd2]
+2018-10-17 11:24:47.912  INFO 5296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:24:48.513  INFO 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a079870: startup date [Wed Oct 17 11:24:33 IST 2018]; root of context hierarchy
+2018-10-17 11:24:48.617  WARN 5296 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 11:24:48.679  INFO 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 11:24:48.679  INFO 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 11:24:48.695  INFO 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 11:24:48.695  INFO 5296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 11:24:48.772  INFO 5296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:24:48.772  INFO 5296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:24:49.443  INFO 5296 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 11:24:49.446  INFO 5296 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 11:24:49.450  INFO 5296 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 11:24:49.513  INFO 5296 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2018-10-17 11:24:49.513  INFO 5296 --- [main] c.a.m.s.ScheduleIngestApplication        : Started ScheduleIngestApplication in 17.54 seconds (JVM running for 18.289)
+2018-10-17 11:26:41.494  INFO 5296 --- [http-nio-8585-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-17 11:26:41.495  INFO 5296 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-17 11:26:41.539  INFO 5296 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 44 ms
+2018-10-17 11:26:41.707  INFO 5296 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 11:26:41.708  INFO 5296 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 11:26:41.715  INFO 5296 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 11:26:41.842  INFO 5296 --- [http-nio-8585-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-17 11:26:42.842  INFO 5296 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : In Schedule service...0
+2018-10-17 11:26:42.843  INFO 5296 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 11:37:51.480  INFO 1740 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 1740 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 11:37:51.485  INFO 1740 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 11:37:51.599  INFO 1740 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17c1bced: startup date [Wed Oct 17 11:37:51 IST 2018]; root of context hierarchy
+2018-10-17 11:37:55.001  INFO 1740 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$358067b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 11:37:56.147  INFO 1740 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 11:37:56.207  INFO 1740 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 11:37:56.207  INFO 1740 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 11:37:56.223  INFO 1740 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 11:37:56.577  INFO 1740 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 11:37:56.577  INFO 1740 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4978 ms
+2018-10-17 11:37:56.827  INFO 1740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 11:37:56.827  INFO 1740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 11:37:56.827  INFO 1740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 11:37:56.827  INFO 1740 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 11:37:56.827  INFO 1740 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 11:37:56.827  INFO 1740 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 11:37:57.314  INFO 1740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 11:37:57.691  INFO 1740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 11:37:57.750  INFO 1740 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:37:57.782  INFO 1740 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 11:37:57.981  INFO 1740 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 11:37:57.981  INFO 1740 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 11:37:58.075  INFO 1740 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 11:37:58.366  INFO 1740 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 11:37:59.196  INFO 1740 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:38:00.014  INFO 5296 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : In Schedule and Publish...
+2018-10-17 11:38:00.026  INFO 5296 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 11:38:00.044  INFO 5296 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 11:38:00.107  INFO 5296 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 11:38:00.154  INFO 5296 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 12:37:10 IST 2018
+2018-10-17 11:38:00.154  INFO 5296 --- [ThreadPoolTaskScheduler1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:38:00.154  INFO 5296 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : Scheduled publish process end...
+2018-10-17 11:38:00.690  INFO 1740 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:38:00.718  INFO 1740 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 11:38:01.101  INFO 1740 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: c89cfb78-1e2a-4b03-ba8f-66300886b905
+
+2018-10-17 11:38:01.413  INFO 1740 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f78d415, org.springframework.security.web.context.SecurityContextPersistenceFilter@20d19f2c, org.springframework.security.web.header.HeaderWriterFilter@6c538eb2, org.springframework.security.web.authentication.logout.LogoutFilter@2415e4c7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77b5148c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b88ca8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1c046c92, org.springframework.security.web.session.SessionManagementFilter@ccd341d, org.springframework.security.web.access.ExceptionTranslationFilter@65be88ae, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@c2cf597]
+2018-10-17 11:38:01.598  INFO 1740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:38:01.973  INFO 1740 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@17c1bced: startup date [Wed Oct 17 11:37:51 IST 2018]; root of context hierarchy
+2018-10-17 11:38:02.067  WARN 1740 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 11:38:02.145  INFO 1740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 11:38:02.145  INFO 1740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 11:38:02.145  INFO 1740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 11:38:02.160  INFO 1740 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 11:38:02.207  INFO 1740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:38:02.207  INFO 1740 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:38:02.873  INFO 1740 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 11:38:02.873  INFO 1740 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 11:38:02.898  INFO 1740 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 11:38:02.946 ERROR 1740 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8585]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8585]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at com.apalya.mmc.scheduleIngest.ScheduleIngestApplication.main(ScheduleIngestApplication.java:11) [main/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 14 common frames omitted
+
+2018-10-17 11:38:02.961  INFO 1740 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-17 11:38:03.001  INFO 1740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-17 11:38:03.031  INFO 1740 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-17 11:38:18.966  INFO 1276 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 1276 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 11:38:18.971  INFO 1276 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 11:38:19.078  INFO 1276 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b168fa9: startup date [Wed Oct 17 11:38:19 IST 2018]; root of context hierarchy
+2018-10-17 11:38:24.888  INFO 1276 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dd1758a0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 11:38:27.338  INFO 1276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 11:38:27.483  INFO 1276 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 11:38:27.483  INFO 1276 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 11:38:27.513  INFO 1276 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 11:38:28.063  INFO 1276 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 11:38:28.063  INFO 1276 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 8985 ms
+2018-10-17 11:38:28.352  INFO 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 11:38:28.352  INFO 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 11:38:28.352  INFO 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 11:38:28.352  INFO 1276 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 11:38:28.352  INFO 1276 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 11:38:28.352  INFO 1276 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 11:38:28.934  INFO 1276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 11:38:29.704  INFO 1276 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 11:38:30.065  INFO 1276 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:38:30.133  INFO 1276 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 11:38:30.513  INFO 1276 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 11:38:30.524  INFO 1276 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 11:38:30.696  INFO 1276 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 11:38:31.499  INFO 1276 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 11:38:33.614  INFO 1276 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:38:34.899  INFO 1276 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:38:34.923  INFO 1276 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 11:38:35.276  INFO 1276 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0b70e76a-1f4d-4935-a663-af320a5e73f1
+
+2018-10-17 11:38:35.693  INFO 1276 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@599a9cb2, org.springframework.security.web.context.SecurityContextPersistenceFilter@7a65a360, org.springframework.security.web.header.HeaderWriterFilter@1ab14636, org.springframework.security.web.authentication.logout.LogoutFilter@6b63abdc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7cff3f1d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72ce812e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a1b36a1, org.springframework.security.web.session.SessionManagementFilter@7c46c9c3, org.springframework.security.web.access.ExceptionTranslationFilter@6ee5f485, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@643ba1ed]
+2018-10-17 11:38:35.937  INFO 1276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:38:36.534  INFO 1276 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b168fa9: startup date [Wed Oct 17 11:38:19 IST 2018]; root of context hierarchy
+2018-10-17 11:38:36.662  WARN 1276 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 11:38:36.748  INFO 1276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 11:38:36.748  INFO 1276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 11:38:36.758  INFO 1276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 11:38:36.758  INFO 1276 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 11:38:36.847  INFO 1276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:38:36.849  INFO 1276 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:38:38.125  INFO 1276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 11:38:38.125  INFO 1276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 11:38:38.145  INFO 1276 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 11:38:38.307  INFO 1276 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2018-10-17 11:38:38.317  INFO 1276 --- [main] c.a.m.s.ScheduleIngestApplication        : Started ScheduleIngestApplication in 20.283 seconds (JVM running for 21.038)
+2018-10-17 11:39:25.363  INFO 1276 --- [http-nio-8585-exec-10] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-17 11:39:25.364  INFO 1276 --- [http-nio-8585-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-17 11:39:25.438  INFO 1276 --- [http-nio-8585-exec-10] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 73 ms
+2018-10-17 11:39:25.607  INFO 1276 --- [http-nio-8585-exec-10] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 11:39:25.608  INFO 1276 --- [http-nio-8585-exec-10] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 11:39:25.706  INFO 1276 --- [http-nio-8585-exec-10] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 11:39:25.798  INFO 1276 --- [http-nio-8585-exec-10] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-17 11:39:26.464  INFO 1276 --- [http-nio-8585-exec-10] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 11:39:26.465  INFO 1276 --- [http-nio-8585-exec-10] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 12:37:10 IST 2018
+2018-10-17 11:39:26.466  INFO 1276 --- [http-nio-8585-exec-10] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:39:26.468  INFO 1276 --- [http-nio-8585-exec-10] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 11:41:02.777  INFO 1276 --- [http-nio-8585-exec-7] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 11:41:02.778  INFO 1276 --- [http-nio-8585-exec-7] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 11:41:02.778  INFO 1276 --- [http-nio-8585-exec-7] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 11:41:02.801  INFO 1276 --- [http-nio-8585-exec-7] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 11:41:02.801  INFO 1276 --- [http-nio-8585-exec-7] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 11:41:50 IST 2018
+2018-10-17 11:41:02.802  INFO 1276 --- [http-nio-8585-exec-7] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:41:02.803  INFO 1276 --- [http-nio-8585-exec-7] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 11:41:31.430  INFO 1276 --- [http-nio-8585-exec-5] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 11:41:31.430  INFO 1276 --- [http-nio-8585-exec-5] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 11:41:31.430  INFO 1276 --- [http-nio-8585-exec-5] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 11:41:31.448  INFO 1276 --- [http-nio-8585-exec-5] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 11:41:31.448  INFO 1276 --- [http-nio-8585-exec-5] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 11:42:50 IST 2018
+2018-10-17 11:41:31.448  INFO 1276 --- [http-nio-8585-exec-5] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:41:31.449  INFO 1276 --- [http-nio-8585-exec-5] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 11:41:50.000  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 11:41:50.015  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 11:41:51.677  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishType=betaContentStore]
+2018-10-17 11:41:51.677  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 400
+2018-10-17 11:42:50.008  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 11:42:50.008  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 11:42:50.145  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishType=betaContentStore]
+2018-10-17 11:42:50.146  INFO 1276 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 400
+2018-10-17 11:58:00.834  INFO 1796 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 1796 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 11:58:00.834  INFO 1796 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 11:58:00.960  INFO 1796 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d548a08: startup date [Wed Oct 17 11:58:00 IST 2018]; root of context hierarchy
+2018-10-17 11:58:03.704  INFO 1796 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$601d7c6b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 11:58:04.878  INFO 1796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 11:58:04.948  INFO 1796 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 11:58:04.948  INFO 1796 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 11:58:04.973  INFO 1796 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 11:58:05.236  INFO 1796 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 11:58:05.236  INFO 1796 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4276 ms
+2018-10-17 11:58:05.440  INFO 1796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 11:58:05.440  INFO 1796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 11:58:05.440  INFO 1796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 11:58:05.440  INFO 1796 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 11:58:05.440  INFO 1796 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 11:58:05.440  INFO 1796 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 11:58:05.971  INFO 1796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 11:58:06.624  INFO 1796 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 11:58:06.687  INFO 1796 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:58:06.718  INFO 1796 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 11:58:06.935  INFO 1796 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 11:58:06.935  INFO 1796 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 11:58:07.014  INFO 1796 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 11:58:07.299  INFO 1796 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 11:58:08.140  INFO 1796 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 11:58:08.960  INFO 1796 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:58:08.976  INFO 1796 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 11:58:09.150  INFO 1796 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 295e8f8b-82ee-4383-9e9c-41ab1544100a
+
+2018-10-17 11:58:09.442  INFO 1796 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2199e845, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cbb175, org.springframework.security.web.header.HeaderWriterFilter@668cc9a2, org.springframework.security.web.authentication.logout.LogoutFilter@20d19f2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ab802f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70ede57d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@27976390, org.springframework.security.web.session.SessionManagementFilter@27b337bb, org.springframework.security.web.access.ExceptionTranslationFilter@52b959df, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@622d7e4]
+2018-10-17 11:58:09.611  INFO 1796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:58:09.999  INFO 1796 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1d548a08: startup date [Wed Oct 17 11:58:00 IST 2018]; root of context hierarchy
+2018-10-17 11:58:10.111  WARN 1796 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 11:58:10.189  INFO 1796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 11:58:10.197  INFO 1796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 11:58:10.197  INFO 1796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 11:58:10.197  INFO 1796 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 11:58:10.274  INFO 1796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:58:10.276  INFO 1796 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 11:58:10.933  INFO 1796 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 11:58:10.936  INFO 1796 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 11:58:10.947  INFO 1796 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 11:58:11.016  INFO 1796 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2018-10-17 11:58:11.016  INFO 1796 --- [main] c.a.m.s.ScheduleIngestApplication        : Started ScheduleIngestApplication in 11.332 seconds (JVM running for 11.961)
+2018-10-17 11:58:44.728  INFO 1796 --- [http-nio-8585-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-17 11:58:44.729  INFO 1796 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-17 11:58:44.784  INFO 1796 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
+2018-10-17 11:58:44.898  INFO 1796 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 11:58:44.899  INFO 1796 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 11:58:44.915  INFO 1796 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 11:58:45.030  INFO 1796 --- [http-nio-8585-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-17 11:58:45.992  INFO 1796 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 11:58:45.993  INFO 1796 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 11:59:50 IST 2018
+2018-10-17 11:58:45.995  INFO 1796 --- [http-nio-8585-exec-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 11:58:45.997  INFO 1796 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 11:59:50.013  INFO 1796 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 11:59:50.052  INFO 1796 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 12:00:18.825  INFO 1796 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishingType=betaContentStore]
+2018-10-17 12:00:18.825  INFO 1796 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 12:45:58.229  INFO 14436 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 14436 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 12:45:58.229  INFO 14436 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 12:45:58.344  INFO 14436 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48524010: startup date [Wed Oct 17 12:45:58 IST 2018]; root of context hierarchy
+2018-10-17 12:46:01.704  INFO 14436 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$550cf234] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 12:46:02.831  INFO 14436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 12:46:02.886  INFO 14436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 12:46:02.886  INFO 14436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 12:46:02.901  INFO 14436 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 12:46:03.168  INFO 14436 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 12:46:03.168  INFO 14436 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4824 ms
+2018-10-17 12:46:03.387  INFO 14436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 12:46:03.388  INFO 14436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 12:46:03.390  INFO 14436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 12:46:03.393  INFO 14436 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 12:46:03.394  INFO 14436 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 12:46:03.395  INFO 14436 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 12:46:03.866  INFO 14436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 12:46:04.300  INFO 14436 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 12:46:04.378  INFO 14436 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 12:46:04.410  INFO 14436 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 12:46:04.623  INFO 14436 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 12:46:04.623  INFO 14436 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 12:46:04.698  INFO 14436 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 12:46:04.967  INFO 14436 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 12:46:06.121  INFO 14436 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 12:46:07.034  INFO 14436 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 12:46:07.050  INFO 14436 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 12:46:07.251  INFO 14436 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6698d6f4-86e8-4984-81df-ff71d1e11fa5
+
+2018-10-17 12:46:07.532  INFO 14436 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@587c5c1, org.springframework.security.web.context.SecurityContextPersistenceFilter@4f1fb828, org.springframework.security.web.header.HeaderWriterFilter@70997a94, org.springframework.security.web.authentication.logout.LogoutFilter@3daf03d8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20d19f2c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@53eba4b8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@528c8c1, org.springframework.security.web.session.SessionManagementFilter@4dad8ec0, org.springframework.security.web.access.ExceptionTranslationFilter@59096b66, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e50df2e]
+2018-10-17 12:46:07.701  INFO 14436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 12:46:08.144  INFO 14436 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@48524010: startup date [Wed Oct 17 12:45:58 IST 2018]; root of context hierarchy
+2018-10-17 12:46:08.250  WARN 14436 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 12:46:08.328  INFO 14436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 12:46:08.331  INFO 14436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 12:46:08.331  INFO 14436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 12:46:08.331  INFO 14436 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 12:46:08.394  INFO 14436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 12:46:08.394  INFO 14436 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 12:46:09.065  INFO 14436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 12:46:09.065  INFO 14436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 12:46:09.080  INFO 14436 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 12:46:09.166  INFO 14436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2018-10-17 12:46:09.166  INFO 14436 --- [main] c.a.m.s.ScheduleIngestApplication        : Started ScheduleIngestApplication in 11.884 seconds (JVM running for 12.584)
+2018-10-17 12:46:24.891  INFO 14436 --- [http-nio-8585-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-17 12:46:24.892  INFO 14436 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-17 12:46:24.981  INFO 14436 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 87 ms
+2018-10-17 12:46:25.225  INFO 14436 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 12:46:25.226  INFO 14436 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 12:46:25.237  INFO 14436 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 12:46:25.321  INFO 14436 --- [http-nio-8585-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-17 12:46:26.110  INFO 14436 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 12:46:26.111  INFO 14436 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 12:48:50 IST 2018
+2018-10-17 12:46:26.112  INFO 14436 --- [http-nio-8585-exec-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 12:46:26.115  INFO 14436 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 12:47:01.653  INFO 14436 --- [http-nio-8585-exec-3] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 12:47:01.653  INFO 14436 --- [http-nio-8585-exec-3] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 12:47:01.654  INFO 14436 --- [http-nio-8585-exec-3] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 12:47:01.671  INFO 14436 --- [http-nio-8585-exec-3] c.a.m.s.service.SchedulePublishService   : In Schedule service...1
+2018-10-17 12:47:01.672  INFO 14436 --- [http-nio-8585-exec-3] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 12:47:50 IST 2018
+2018-10-17 12:47:01.673  INFO 14436 --- [http-nio-8585-exec-3] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 12:47:01.674  INFO 14436 --- [http-nio-8585-exec-3] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 12:47:50.013  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 56692 at Wed Oct 17 12:47:50 IST 2018 into betaContentStore by user 1
+2018-10-17 12:47:50.017  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 12:47:50.017  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 12:48:09.507  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishingType=betaContentStore]
+2018-10-17 12:48:09.509  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 12:48:50.011  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 56692 at Wed Oct 17 12:48:50 IST 2018 into betaContentStore by user 1
+2018-10-17 12:48:50.011  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 12:48:50.013  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 12:49:07.016  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishingType=betaContentStore]
+2018-10-17 12:49:07.016  INFO 14436 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 13:15:34.777  INFO 6592 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 6592 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 13:15:34.783  INFO 6592 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 13:15:34.945  INFO 6592 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b168fa9: startup date [Wed Oct 17 13:15:34 IST 2018]; root of context hierarchy
+2018-10-17 13:15:38.069  INFO 6592 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5189d38] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 13:15:40.158  INFO 6592 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 13:15:40.288  INFO 6592 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 13:15:40.289  INFO 6592 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 13:15:40.309  INFO 6592 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 13:15:40.766  INFO 6592 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 13:15:40.766  INFO 6592 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5836 ms
+2018-10-17 13:15:41.292  INFO 6592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 13:15:41.292  INFO 6592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 13:15:41.292  INFO 6592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 13:15:41.292  INFO 6592 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 13:15:41.292  INFO 6592 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 13:15:41.313  INFO 6592 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 13:15:42.705  INFO 6592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 13:15:43.467  INFO 6592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 13:15:43.558  INFO 6592 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 13:15:43.619  INFO 6592 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 13:15:43.963  INFO 6592 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 13:15:43.965  INFO 6592 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 13:15:44.085  INFO 6592 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 13:15:44.480  INFO 6592 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 13:15:45.464  INFO 6592 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 13:15:46.300  INFO 6592 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:15:46.325  INFO 6592 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 13:15:46.533  INFO 6592 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 81642461-ff88-4aac-a029-5a67bc27114a
+
+2018-10-17 13:15:46.922  INFO 6592 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1f84327b, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fa02932, org.springframework.security.web.header.HeaderWriterFilter@6ee5f485, org.springframework.security.web.authentication.logout.LogoutFilter@1961d75a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c46c9c3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@33a8c9c9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39549f33, org.springframework.security.web.session.SessionManagementFilter@53eba4b8, org.springframework.security.web.access.ExceptionTranslationFilter@63f40ca0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@587c5c1]
+2018-10-17 13:15:47.094  INFO 6592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:15:47.551  INFO 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b168fa9: startup date [Wed Oct 17 13:15:34 IST 2018]; root of context hierarchy
+2018-10-17 13:15:47.653  WARN 6592 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 13:15:47.732  INFO 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 13:15:47.734  INFO 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 13:15:47.734  INFO 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 13:15:47.734  INFO 6592 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 13:15:47.784  INFO 6592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:15:47.784  INFO 6592 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:15:48.621  INFO 6592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 13:15:48.631  INFO 6592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 13:15:48.649  INFO 6592 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 13:15:48.735 ERROR 6592 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8585]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8585]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:256) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:198) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.0.9.RELEASE.jar:5.0.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:780) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:333) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1277) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1265) [spring-boot-2.0.5.RELEASE.jar:2.0.5.RELEASE]
+	at com.apalya.mmc.scheduleIngest.ScheduleIngestApplication.main(ScheduleIngestApplication.java:11) [main/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_131]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_131]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_131]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1151) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.34.jar:8.5.34]
+	... 14 common frames omitted
+
+2018-10-17 13:15:48.765  INFO 6592 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-10-17 13:15:48.845  INFO 6592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-10-17 13:15:48.877  INFO 6592 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-10-17 13:15:58.829  INFO 17400 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 17400 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 13:15:58.844  INFO 17400 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 13:15:58.949  INFO 17400 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d299e3: startup date [Wed Oct 17 13:15:58 IST 2018]; root of context hierarchy
+2018-10-17 13:16:02.572  INFO 17400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9bd3a6ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 13:16:03.692  INFO 17400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 13:16:03.744  INFO 17400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 13:16:03.744  INFO 17400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 13:16:03.768  INFO 17400 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 13:16:04.017  INFO 17400 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 13:16:04.017  INFO 17400 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5069 ms
+2018-10-17 13:16:04.246  INFO 17400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 13:16:04.247  INFO 17400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 13:16:04.248  INFO 17400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 13:16:04.248  INFO 17400 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 13:16:04.249  INFO 17400 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 13:16:04.250  INFO 17400 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 13:16:04.784  INFO 17400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 13:16:05.177  INFO 17400 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 13:16:05.228  INFO 17400 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 13:16:05.262  INFO 17400 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 13:16:05.512  INFO 17400 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 13:16:05.528  INFO 17400 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 13:16:05.608  INFO 17400 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 13:16:05.912  INFO 17400 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 13:16:07.212  INFO 17400 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 13:16:08.093  INFO 17400 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:16:08.111  INFO 17400 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 13:16:08.281  INFO 17400 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: e4cbfcec-a519-45a6-abb3-cff368d86286
+
+2018-10-17 13:16:08.552  INFO 17400 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44f0ff2b, org.springframework.security.web.context.SecurityContextPersistenceFilter@72ce812e, org.springframework.security.web.header.HeaderWriterFilter@7197b07f, org.springframework.security.web.authentication.logout.LogoutFilter@7f0a133d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@521441d5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1961d75a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@22ead351, org.springframework.security.web.session.SessionManagementFilter@3daf03d8, org.springframework.security.web.access.ExceptionTranslationFilter@437bd805, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@dbddbe3]
+2018-10-17 13:16:08.751  INFO 17400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:16:09.166  INFO 17400 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3d299e3: startup date [Wed Oct 17 13:15:58 IST 2018]; root of context hierarchy
+2018-10-17 13:16:09.250  WARN 17400 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 13:16:09.328  INFO 17400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 13:16:09.340  INFO 17400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 13:16:09.340  INFO 17400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 13:16:09.340  INFO 17400 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 13:16:09.402  INFO 17400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:16:09.402  INFO 17400 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 13:16:10.045  INFO 17400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 13:16:10.045  INFO 17400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 13:16:10.060  INFO 17400 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 13:16:10.123  INFO 17400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2018-10-17 13:16:10.138  INFO 17400 --- [main] c.a.m.s.ScheduleIngestApplication        : Started ScheduleIngestApplication in 12.125 seconds (JVM running for 12.848)
+2018-10-17 13:16:20.648  INFO 17400 --- [http-nio-8585-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-10-17 13:16:20.649  INFO 17400 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-10-17 13:16:20.708  INFO 17400 --- [http-nio-8585-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 59 ms
+2018-10-17 13:16:20.928  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : In Schedule and Publish...
+2018-10-17 13:16:20.929  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 13:16:20.940  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 13:16:21.154  INFO 17400 --- [http-nio-8585-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-10-17 13:16:21.989  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : In Schedule service...3
+2018-10-17 13:16:21.990  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 12:47:50 IST 2018
+2018-10-17 13:16:21.991  INFO 17400 --- [http-nio-8585-exec-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:16:21.992  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Mon Oct 15 18:44:00 IST 2018
+2018-10-17 13:16:21.993  INFO 17400 --- [http-nio-8585-exec-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:16:21.994  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Mon Oct 15 18:47:30 IST 2018
+2018-10-17 13:16:21.995  INFO 17400 --- [http-nio-8585-exec-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:16:21.996  INFO 17400 --- [http-nio-8585-exec-1] c.a.m.s.c.IngestScheduleController       : Scheduled publish process end...
+2018-10-17 13:16:21.993  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 56692 at Wed Oct 17 12:47:50 IST 2018 into betaContentStore by user 1
+2018-10-17 13:16:22.004  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 13:16:21.999  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 57 at Mon Oct 15 18:44:00 IST 2018 into betaContentStore by user null
+2018-10-17 13:16:22.011  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 13:16:22.007  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 13:16:22.034  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 13:16:22.035  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 184 at Mon Oct 15 18:47:30 IST 2018 into demoEvergent by user null
+2018-10-17 13:16:22.035  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 13:16:22.035  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 13:16:23.519  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=57, userId, publishingType=betaContentStore]
+2018-10-17 13:16:23.527  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 13:16:23.543  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=184, userId, publishingType=demoEvergent]
+2018-10-17 13:16:23.543  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 13:16:41.502  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishingType=betaContentStore]
+2018-10-17 13:16:41.507  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 13:38:00.018  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : In Schedule and Publish...
+2018-10-17 13:38:00.018  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : Finding schedules...
+2018-10-17 13:38:00.018  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : Checking between dates
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : In Schedule service...3
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Wed Oct 17 12:47:50 IST 2018
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Mon Oct 15 18:44:00 IST 2018
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 56692 at Wed Oct 17 12:47:50 IST 2018 into betaContentStore by user 1
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : convertedDate is:Mon Oct 15 18:47:30 IST 2018
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 57 at Mon Oct 15 18:44:00 IST 2018 into betaContentStore by user null
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.SchedulePublishService   : Scheduled publish process end...
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : Scheduled publish 184 at Mon Oct 15 18:47:30 IST 2018 into demoEvergent by user null
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.service.ScheduleTask             : sending Post...
+2018-10-17 13:38:00.041  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : 
+Sending 'POST' request to URL : http://stagv2cms.sunnxt.in:8080/api/publish/publishContent
+2018-10-17 13:38:00.171  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=57, userId, publishingType=betaContentStore]
+2018-10-17 13:38:00.171  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 13:38:00.234  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=184, userId, publishingType=demoEvergent]
+2018-10-17 13:38:00.234  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 13:38:17.393  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Post parameters : [contentId=56692, userId=1, publishingType=betaContentStore]
+2018-10-17 13:38:17.393  INFO 17400 --- [ThreadPoolTaskScheduler1] c.a.m.s.utilities.RestUtililty           : Response Code : 200
+2018-10-17 16:01:54.166  INFO 12040 --- [main] c.a.m.s.ScheduleIngestApplication        : Starting ScheduleIngestApplication on DESKTOP-5C1PIE6 with PID 12040 (D:\CodeClone\scheduleIngest\bin\main started by satya raj in D:\CodeClone\scheduleIngest)
+2018-10-17 16:01:54.235  INFO 12040 --- [main] c.a.m.s.ScheduleIngestApplication        : No active profile set, falling back to default profiles: default
+2018-10-17 16:01:54.347  INFO 12040 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f3b5d16: startup date [Wed Oct 17 16:01:54 IST 2018]; root of context hierarchy
+2018-10-17 16:01:57.114  INFO 12040 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c6c0f750] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-17 16:01:58.587  INFO 12040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8585 (http)
+2018-10-17 16:01:58.641  INFO 12040 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-17 16:01:58.641  INFO 12040 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.34
+2018-10-17 16:01:58.656  INFO 12040 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_131\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_131\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\Software\apache-maven-3.5.2\bin;C:\Python27;C:\Python27\Scripts\;;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_131\bin;D:\Software\apache-ant-1.10.3\bin;C:\Users\satya raj\AppData\Local\Microsoft\WindowsApps;D:\Software\gradle-4.10.1\bin;D:\Software\sonar-scanner-3.2.0.1227-windows\bin;;D:\Software\sts-bundle\sts-3.6.4.RELEASE;;.]
+2018-10-17 16:01:59.053  INFO 12040 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-17 16:01:59.053  INFO 12040 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4706 ms
+2018-10-17 16:01:59.221  INFO 12040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-17 16:01:59.221  INFO 12040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-17 16:01:59.221  INFO 12040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-17 16:01:59.221  INFO 12040 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-17 16:01:59.221  INFO 12040 --- [localhost-startStop-1] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2018-10-17 16:01:59.221  INFO 12040 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-10-17 16:01:59.715  INFO 12040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-10-17 16:02:00.277  INFO 12040 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-10-17 16:02:00.355  INFO 12040 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-10-17 16:02:00.386  INFO 12040 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-10-17 16:02:00.636  INFO 12040 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-10-17 16:02:00.636  INFO 12040 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-10-17 16:02:00.730  INFO 12040 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-10-17 16:02:01.045  INFO 12040 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-10-17 16:02:02.019  INFO 12040 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-10-17 16:02:02.825  INFO 12040 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 
+2018-10-17 16:02:02.840  INFO 12040 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'threadPoolTaskScheduler'
+2018-10-17 16:02:03.079  INFO 12040 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 3c9e2658-f9ab-4c9e-8770-370de1b2dc5e
+
+2018-10-17 16:02:03.664  INFO 12040 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43d65a81, org.springframework.security.web.context.SecurityContextPersistenceFilter@592ca48c, org.springframework.security.web.header.HeaderWriterFilter@30a7653e, org.springframework.security.web.authentication.logout.LogoutFilter@644a3add, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3fdcde7a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7cfb0c4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@9cfc77, org.springframework.security.web.session.SessionManagementFilter@72ce812e, org.springframework.security.web.access.ExceptionTranslationFilter@61608e1a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@599a9cb2]
+2018-10-17 16:02:04.021  INFO 12040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 16:02:04.511  INFO 12040 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6f3b5d16: startup date [Wed Oct 17 16:01:54 IST 2018]; root of context hierarchy
+2018-10-17 16:02:04.620  WARN 12040 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-10-17 16:02:04.698  INFO 12040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/version],methods=[GET]}" onto public java.lang.String com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkVersion()
+2018-10-17 16:02:04.698  INFO 12040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/scheduleAndPublish],methods=[GET]}" onto public void com.apalya.mmc.scheduleIngest.controller.IngestScheduleController.checkAndPublish()
+2018-10-17 16:02:04.698  INFO 12040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-17 16:02:04.713  INFO 12040 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-17 16:02:04.760  INFO 12040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 16:02:04.760  INFO 12040 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-17 16:02:05.381  INFO 12040 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-17 16:02:05.397  INFO 12040 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-10-17 16:02:05.397  INFO 12040 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-10-17 16:02:05.585  INFO 12040 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8585 (http) with context path ''
+2018-10-17 16:02:05.590  INFO 12040 --- [main] c.a.m.s.ScheduleIngestApplication        : Started ScheduleIngestApplication in 12.321 seconds (JVM running for 13.04)

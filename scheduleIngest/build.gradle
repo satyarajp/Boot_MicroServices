@@ -1,0 +1,63 @@
+buildscript {
+
+
+	ext {
+		springBootVersion = '2.0.5.RELEASE'
+	}
+
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+
+
+plugins {
+	id 'net.ltgt.apt' version '0.10'
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.apalya.mmc.scheduleIngest'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+jar{
+	baseName = "sims"
+}
+
+
+dependencies {
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+	implementation('org.springframework.boot:spring-boot-starter-security')
+	implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
+	implementation('org.springframework.boot:spring-boot-starter-web')
+	runtimeOnly('mysql:mysql-connector-java')
+	testImplementation('org.springframework.boot:spring-boot-starter-test')
+	testImplementation('org.springframework.security:spring-security-test')
+//##Logging
+	testCompile group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+	
+//Apache http
+		compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.10'
+		compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.5.6'
+		compile group: 'org.apache.httpcomponents', name: 'fluent-hc', version: '4.5.6'
+		compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.6'
+		compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
+//lombok		
+		compileOnly 'org.projectlombok:lombok:1.18.2'
+		apt 'org.projectlombok:lombok:1.18.2'
+
+	
+	
+}
